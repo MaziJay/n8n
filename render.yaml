@@ -1,0 +1,24 @@
+services:
+- type: web 
+name: n8n 
+env: docker 
+plan: free 
+dockerfilePath: Dockerfile 
+autoDeploy: true 
+envVars: 
+- key: N8N_BASIC_AUTH_ACTIVE 
+value: true 
+- key: N8N_BASIC_AUTH_USER 
+value: MaziJay 
+- key: N8N_BASIC_AUTH_PASSWORD 
+value: Physh100% 
+- key: N8N_USER_MANAGEMENT_DISABLED 
+value: true 
+- key: N8N_DISABLE_PRODUCTION_MAIN_MENU 
+value: true 
+- key: N8N_PORT 
+value: 10000 
+- key: PORT 
+value: 10000 
+- key: N8N_HOST 
+value: 0.0.0.0
